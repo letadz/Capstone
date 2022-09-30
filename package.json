@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "Kodego Capstone",
   "main": "server.js",
-  "engines": {
-    "node": "16.x0",
-    "npm": "8.x"
-  },
   "scripts": {
     "client-install":"npm install --prefix client",
     "start":"node server.js",
@@ -32,5 +28,8 @@
     "nodemailer": "^6.7.8",
     "nodemon": "^2.0.20"
   },
-  "description": ""
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  }
 }
