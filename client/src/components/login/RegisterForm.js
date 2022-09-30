@@ -73,8 +73,7 @@ export default function RegisterForm({ setVisible }) {
 
   const registerSubmit = async () => {
     try {
-      const { data } = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/register`,
+      const { data } = await axios.post(`/register`,
         {
           first_name,
           last_name,
