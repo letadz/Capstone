@@ -1,0 +1,14 @@
+/* scroll to top button */
+.arrow-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow-btn:hover {
+    filter: saturate(4);
+}

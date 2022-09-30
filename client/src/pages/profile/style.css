@@ -1,0 +1,293 @@
+a {
+  text-decoration: none;
+}
+.profile_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 90vh;
+}
+.user_container {
+  padding: 2rem 1rem;
+  background-color: var(--color-orange);
+  height: 100%;
+}
+.user-link_back {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-black);
+}
+.user-link_back:hover {
+  text-decoration: underline;
+  color: var(--color-black);
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu .menu_icon {
+  font-size: 2rem;
+  margin-right: 1.125rem;
+}
+
+.menu_item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-dgray);
+  color: var(--color-black);
+}
+.menu_item:hover {
+  color: var(--color-white);
+}
+.navigation_name {
+  display: flex;
+  gap: 10px;
+}
+.profile_pic img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+}
+.profile_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-dgray);
+  font-weight: 600;
+}
+.profile_text span:first-child {
+  text-transform: capitalize;
+}
+.profile_text span:last-child {
+  font-size: 14px;
+}
+
+.cars_container {
+  display: flex;
+  /* width: 84.4%; */
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  background-color: var(--color-dgray);
+  padding: 1rem 6rem 1rem;
+}
+
+.profile-cars_container {
+  display: flex;
+  flex-direction: column;
+  white-space: normal;
+  overflow: auto;
+  height: 80vh;
+  width: 93%;
+  scroll-snap-type: y mandatory;
+}
+
+/* .cars_container .slider .slick-disabled {
+  opacity: 0;
+} */
+
+.profile_container-user {
+  width: 100%;
+}
+.reset {
+  background-color: var(--color-grey);
+  height: 100vh;
+  color: var(--color-black);
+}
+.profile_nav {
+  background-color: var(--color-white);
+  box-shadow: 1px 8px 15px -15px var(--color-dgray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.profile_nav img {
+  width: 160px;
+}
+
+.right_navbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.right_navbar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.profile_navbar {
+  min-width: 300px;
+}
+.profile_navbar-values {
+  display: flex;
+  /* justify-content: center; */
+  width: 100%;
+}
+.float_right {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* HISTORY */
+.history_container {
+  padding: 1rem;
+}
+
+/* .history_container table {
+  border-collapse: separate;
+  border-spacing: 1rem;
+} */
+
+.history_container table {
+  width: 100%;
+}
+
+.history_container table,
+th,
+td {
+  border: 1px solid var(--color-black);
+  border-collapse: collapse;
+}
+
+.history_container th,
+td {
+  padding: 1rem;
+}
+
+.copyright2-container {
+  background: var(--color-black);
+}
+
+.copyright2-container .copyright2-content {
+  padding: 0.6rem;
+  color: var(--color-grey);
+}
+
+.copyright2-container .copyright2-content > span {
+  font-size: 0.8rem;
+}
+.upload_btns {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0 0 0;
+}
+.file_container {
+  padding: 1rem 0 0 0;
+}
+.file_container input[type="file" i]::-webkit-file-upload-button {
+  background-color: var(--color-dgray);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.upload_btn {
+  color: black !important;
+  margin-left: 0.5rem;
+}
+.profile_circle {
+  padding-top: 1rem;
+}
+.profile_img {
+  display: inline-block;
+  border-radius: 10px;
+}
+.profile_img img {
+  border-radius: 10px;
+}
+
+.profile_nav .navbar-menu {
+  display: none;
+}
+
+.profile_nav .hamburger_menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.profile_nav .navbar-menu_container {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+}
+
+.profile_nav .navbar-menu_container a {
+  text-transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  .profile_navbar {
+    display: none;
+  }
+
+  .profile_navbar .navbar-menu,
+  .profile_nav .profile_pic,
+  .profile_nav .logout {
+    display: none;
+  }
+
+  .profile_nav .navbar-menu,
+  .profile_nav .navbar-menu_container-links-book {
+    display: block;
+  }
+
+  .profile_nav .user_container {
+    background: var(--color-white);
+    padding: 0;
+  }
+
+  .profile_nav .user-link_back {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .profile_nav .navigation_name {
+    flex-direction: column;
+  }
+
+  .profile_nav .navbar-menu_container-links-book {
+    margin-bottom: 1rem;
+  }
+
+  .profile_nav .navbar-menu_container-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile_nav .menu_item {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .profile_nav .menu_item:hover {
+    color: var(--color-orange);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cars_container {
+    padding: 1rem;
+  }
+
+  .car_container .car_details {
+    flex-direction: column;
+  }
+
+  .profile-cars_container {
+    height: 86vh;
+  }
+}

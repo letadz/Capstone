@@ -1,0 +1,233 @@
+/* SERVICES */
+.services .services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.services .services-container {
+  margin: 2rem auto;
+  height: 50rem;
+}
+
+.services .services-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 0.8rem;
+}
+
+.services .bottom-title {
+  position: relative;
+  padding: 2rem;
+  font-size: 2.15rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.services .bottom-title::after {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  height: 0.3rem;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-orange);
+}
+
+.services .services-img1 {
+  background: url("../../images/services/hail-damage-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.services .services-img2 {
+  background: url("../../images/services/engine-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.services .services-img3 {
+  background: url("../../images/services/collision-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.services .services-img4 {
+  background: url("../../images/services/glass-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.services .services-img5 {
+  background: url("../../images/services/dent-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.services .services-img6 {
+  background: url("../../images/services/frame-straightening.jpg") no-repeat
+    center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.services .services-img7 {
+  background: url("../../images/services/exterior.jpg") no-repeat
+    center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.services .services-img8 {
+  background: url("../../images/services/body-restoration.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.services .services-items {
+  position: relative;
+  width: calc(25% - 2rem);
+  height: 250px;
+  margin: 0.5rem 1rem;
+  background: #eee;
+  cursor: pointer;
+  transition: 0.5s all;
+  color: var(--color-black);
+}
+
+/* .services .services-img {
+  width: calc(100% + 0.01rem);
+} */
+
+.services .services-content {
+  padding: 0.8rem;
+  min-height: 5rem;
+}
+
+.services .services-title {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.services .all-services-btn {
+  padding: 0.5rem 1.5rem;
+  color: var(--color-black);
+  background-color: var(--color-orange);
+  text-decoration: none;
+  font-size: 1.125rem;
+  border: none;
+  transition: 0.3s ease-in;
+  text-transform: capitalize;
+  border-radius: 5px;
+  margin-top: 3rem;
+  margin-inline: auto;
+}
+
+/* HOVER SERVICES */
+.services .services-items:hover {
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.5);
+}
+
+.services .services-items:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 0.4rem;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-orange);
+}
+
+.services .services-items:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 71%;
+  width: 100%;
+  background-color: var(--color-orange);
+  opacity: 0.1;
+}
+
+.services .all-services-btn:hover {
+  cursor: pointer;
+  box-shadow: inset 250px 0 0 0 #f6e71d;
+}
+/* HOVER SERVICES */
+
+@media screen and (max-width: 1024px) {
+  .services .services-items:hover .services-content {
+    height: 41.5%;
+  }
+
+  .services .services-items {
+    width: calc(25% - 2rem);
+    height: 250px;
+  }
+
+  .services .services-items:hover::before {
+    bottom: 0rem;
+    height: 0.4rem;
+  }
+
+  .services .services-items:hover::after {
+    height: 71%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services .services-container {
+    height: 68rem;
+  }
+
+  .services .services-items:hover .services-content {
+    height: 50%;
+  }
+
+  .services .services-items {
+    width: calc(33.33% - 2rem);
+    height: 26%;
+  }
+
+  .services .services-items:hover::after {
+    height: 65%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .services .services-container {
+    height: 151rem;
+  }
+
+  .services .services-section {
+    row-gap: 0;
+  }
+
+  .services .item1-img:hover:after,
+  .item2-img:hover:after,
+  .item3-img:hover:after {
+    height: 55%;
+  }
+
+  .services .services-items:hover .services-content {
+    height: 50%;
+  }
+
+  .services .services-items {
+    width: calc(100% - 2rem);
+    height: 8%;
+  }
+
+  .services .services-items:hover::after {
+    height: 64%;
+  }
+}

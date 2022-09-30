@@ -1,0 +1,81 @@
+/* Modal */
+.modal-testimonials .modal-dialog {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.modal-testimonials .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+    border: none;
+}
+
+.modal-testimonials .modal-header {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.modal-testimonials .modal-footer {
+    /* margin-right: 1rem; */
+}
+
+.modal-testimonials .btn-close {
+    background: url('../../../images/other-logo/close.png') center center no-repeat;
+    font-size: 8px;
+    opacity: 0.9;
+}
+
+.modal-testimonials .btn-close:hover {
+    opacity: 0.7;
+}
+
+.modal-testimonials .testimonial-message {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+}
+
+.modal-testimonials .form-floating {
+    flex: 1 1 auto;
+}
+
+.modal-testimonials .star, .testimonial-message, .testimonial-name, .testimonial-phone {
+    margin-bottom: 1rem;
+}
+
+.modal-testimonials .btn-submit {
+    padding: 0.5rem 1rem;
+    color: var(--color-black);
+    background-color: var(--color-orange);
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in;
+  }
+  
+  .modal-testimonials .btn-submit:hover {
+    cursor: pointer;
+    box-shadow: inset 200px 0 0 0 #f6e71d;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .modal-testimonials .modal-content {
+        width: 42vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .modal-testimonials .modal-content {
+        width: 60vw;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .modal-testimonials .modal-content {
+        width: 90vw;
+    }
+  }

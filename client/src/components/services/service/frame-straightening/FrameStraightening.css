@@ -1,0 +1,313 @@
+.frame-straightening {
+  padding-top: 1rem;
+  background: var(--color-grey);
+}
+
+.frame-straightening .frame-straightening-content {
+  text-decoration: none;
+  margin: 1rem auto 3rem;
+}
+
+.frame-straightening .frame-straightening-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.frame-straightening .frame-straightening-link-home:hover .arrow-left {
+  transform: translateX(-2px);
+}
+
+.frame-straightening .arrow-left {
+  margin-right: 0.5rem;
+  color: var(--color-black);
+  transition: 0.3s ease;
+}
+
+.frame-straightening .frame-straightening-text-left {
+  position: relative;
+  color: var(--color-black);
+}
+
+.frame-straightening .frame-straightening-text-left::after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+  left: 50%;
+  bottom: -0.4rem;
+  height: 3px;
+  background: var(--color-orange);
+}
+
+.frame-straightening .frame-straightening-text-left:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.frame-straightening .frame-straightening-text-middle {
+  position: relative;
+  color: var(--color-black);
+}
+
+.frame-straightening .frame-straightening-text-middle::after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+  left: 50%;
+  bottom: -0.4rem;
+  height: 3px;
+  background: var(--color-orange);
+}
+
+.frame-straightening .frame-straightening-text-middle:hover::after {
+  width: 90%;
+  left: 0.2rem;
+}
+
+.frame-straightening .frame-straightening-text-right {
+  color: var(--color-black);
+  opacity: 0.5;
+}
+
+.frame-straightening .frame-straightening-left {
+  margin-top: 3rem;
+  width: min(100%, 43rem);
+  color: var(--color-black);
+  line-height: 1.3;
+}
+
+.frame-straightening .frame-straightening-right {
+  width: calc(45% - 2rem);
+}
+
+.frame-straightening .frame-straightening-img {
+  background: url("../../../../images/services/frame-straightening.jpg")
+    no-repeat center;
+  height: 22rem;
+  margin-top: 3.3rem;
+}
+
+.frame-straightening .copyright-frame-straightening {
+  background: var(--color-black);
+}
+
+.frame-straightening .copyright-content {
+  padding: 0.6rem;
+  color: var(--color-grey);
+  border-top: 1px solid var(--color-grey);
+}
+
+.frame-straightening .copyright-content > span {
+  font-size: 0.8rem;
+}
+
+.frame-straightening .btn-schedule {
+  margin-top: 3rem;
+}
+
+/* CONTACTS */
+.frame-straightening .frame-straightening-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-black);
+}
+
+.frame-straightening .contact-title {
+  position: relative;
+  padding: 2rem;
+  font-size: 2.15rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.frame-straightening .contact-title::after {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  height: 0.3rem;
+  max-width: 8.5rem;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-orange);
+}
+
+.frame-straightening .frame-straightening-contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  gap: 5rem;
+}
+
+.frame-straightening .frame-straightening-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--color-grey);
+}
+
+.frame-straightening .frame-straightening-contact-left {
+  width: 37.5rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.frame-straightening .tel,
+.frame-straightening .email,
+.frame-straightening .address {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.frame-straightening .tel-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.frame-straightening .logo {
+  width: 25rem;
+}
+
+.frame-straightening .tel-logo,
+.email-logo,
+.address-logo {
+  font-size: 2rem;
+}
+
+.frame-straightening .map {
+  width: 37.5rem;
+  height: 25rem;
+  border: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .frame-straightening .map {
+    width: 30rem;
+    height: 25rem;
+  }
+
+  .frame-straightening .logo {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  .frame-straightening .frame-straightening-contact-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .frame-straightening .frame-straightening-contact-left {
+    height: 18.75rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .frame-straightening .frame-straightening-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin: auto;
+    gap: 1rem;
+    color: var(--color-grey);
+  }
+
+  .frame-straightening .map {
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .frame-straightening .frame-straightening-description {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .frame-straightening .frame-straightening-left {
+    margin-top: 2rem;
+    order: 1;
+  }
+
+  .frame-straightening .frame-straightening-right {
+    width: calc(100% - 1rem);
+  }
+
+  .frame-straightening .frame-straightening-description {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .frame-straightening .frame-straightening-left {
+    order: 1;
+  }
+
+  .frame-straightening .frame-straightening-right {
+    width: calc(100% - 1rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .frame-straightening .frame-straightening-contact-title {
+    margin-bottom: 1rem;
+  }
+
+  .frame-straightening .frame-straightening-contact-left {
+    height: 18.75rem;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .frame-straightening .frame-straightening-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin: 0 1rem 0;
+    gap: 1rem;
+    color: var(--color-grey);
+  }
+
+  .frame-straightening .frame-straightening-contact-left {
+    margin: 1rem auto;
+    padding: 1rem;
+    gap: 3rem;
+  }
+
+  .frame-straightening .map {
+    width: 100%;
+    height: 100%;
+  }
+}

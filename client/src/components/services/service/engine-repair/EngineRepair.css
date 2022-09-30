@@ -1,0 +1,314 @@
+.engine-repair {
+  padding-top: 1rem;
+  background: var(--color-grey);
+}
+
+.engine-repair .engine-repair-content {
+  text-decoration: none;
+  margin: 1rem auto 3rem;
+}
+
+.engine-repair .engine-repair-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.engine-repair .engine-repair-link-home:hover .arrow-left {
+  transform: translateX(-2px);
+}
+
+.engine-repair .arrow-left {
+  margin-right: 0.5rem;
+  color: var(--color-black);
+  transition: 0.3s ease;
+}
+
+.engine-repair .engine-text-left {
+  position: relative;
+  color: var(--color-black);
+}
+
+.engine-repair .engine-text-left::after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+  left: 50%;
+  bottom: -0.4rem;
+  height: 3px;
+  background: var(--color-orange);
+}
+
+.engine-repair .engine-text-left:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.engine-repair .engine-text-middle {
+  position: relative;
+  color: var(--color-black);
+}
+
+.engine-repair .engine-text-middle::after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+  left: 50%;
+  bottom: -0.4rem;
+  height: 3px;
+  background: var(--color-orange);
+}
+
+.engine-repair .engine-text-middle:hover::after {
+  width: 90%;
+  left: 0.2rem;
+}
+
+.engine-repair .engine-text-right {
+  color: var(--color-black);
+  opacity: 0.5;
+}
+
+.engine-repair .engine-repair-left {
+  margin-top: 3rem;
+  width: min(100%, 43rem);
+  color: var(--color-black);
+  line-height: 1.3;
+}
+
+.engine-repair .engine-repair-right {
+  width: calc(45% - 2rem);
+}
+
+.engine-repair .engine-repair-img {
+  margin-top: 3.2rem;
+  background: url("../../../../images/services/hail-damage-repair.jpg")
+    no-repeat center;
+  height: 27rem;
+}
+
+.engine-repair .copyright-engine {
+  background: var(--color-black);
+}
+
+.engine-repair .copyright-content {
+  padding: 0.6rem;
+  color: var(--color-grey);
+  border-top: 1px solid var(--color-grey);
+}
+
+.engine-repair .copyright-content > span {
+  font-size: 0.8rem;
+}
+
+.engine-repair .btn-schedule {
+  margin-top: 3rem;
+}
+
+/* CONTACTS */
+.engine-repair .engine-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-black);
+}
+
+.engine-repair .contact-title {
+  position: relative;
+  padding: 2rem;
+  font-size: 2.15rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.engine-repair .contact-title::after {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  height: 0.3rem;
+  max-width: 8.5rem;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-orange);
+}
+
+.engine-repair .engine-contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  gap: 5rem;
+}
+
+.engine-repair .engine-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--color-grey);
+}
+
+.engine-repair .engine-contact-left {
+  width: 37.5rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.engine-repair .tel,
+.engine-repair .email,
+.engine-repair .address {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.engine-repair .tel-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.engine-repair .logo {
+  width: 25rem;
+}
+
+.engine-repair .tel-logo,
+.email-logo,
+.address-logo {
+  font-size: 2rem;
+}
+
+.engine-repair .map {
+  width: 37.5rem;
+  height: 25rem;
+  border: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .engine-repair .map {
+    width: 30rem;
+    height: 25rem;
+  }
+
+  .engine-repair .logo {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  .engine-repair .engine-contact-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .engine-repair .engine-contact-left {
+    height: 18.75rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .engine-repair .engine-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin: auto;
+    gap: 1rem;
+    color: var(--color-grey);
+  }
+
+  .engine-repair .map {
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .engine-repair .engine-repair-description {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .engine-repair .engine-repair-left {
+    margin-top: 2rem;
+    order: 1;
+  }
+
+  .engine-repair .engine-repair-right {
+    width: calc(100% - 1rem);
+  }
+
+  /* CONTACTS */
+  .engine-repair .engine-repair-description {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .engine-repair .engine-repair-left {
+    order: 1;
+  }
+
+  .engine-repair .engine-repair-right {
+    width: calc(100% - 1rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .engine-repair .engine-contact-title {
+    margin-bottom: 1rem;
+  }
+
+  .engine-repair .engine-contact-left {
+    height: 18.75rem;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .engine-repair .engine-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin: 0 1rem 0;
+    gap: 1rem;
+    color: var(--color-grey);
+  }
+
+  .engine-repair .engine-contact-left {
+    margin: 1rem auto;
+    padding: 1rem;
+    gap: 3rem;
+  }
+
+  .engine-repair .map {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,54 @@
+.modal-login .modal-content {
+  margin: auto;
+  width: 80%;
+  height: 20rem;
+}
+
+.modal-login .modal-header {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.modal-login .modal-body {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-login .modal-body::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: url("../../../images/other-logo/modal-logo.png") no-repeat;
+  background-position: 10rem 7rem;
+  opacity: 0.2;
+}
+
+.modal-login .modal-logo {
+  height: 1.5rem;
+}
+
+.modal-login .modal-link-login {
+  color: var(--color-black);
+  text-decoration: underline;
+}
+
+.modal-login .modal-link-login:hover {
+  color: var(--color-orange);
+}
+
+.modal-login .btn-close {
+  background: url("../../../images/other-logo/close.png") center center
+    no-repeat;
+  font-size: 8px;
+  opacity: 0.9;
+}
+
+.modal-login .btn-close:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,124 @@
+.faqs {
+  margin: 1rem auto;
+  background-color: var(--color-grey);
+}
+
+.faqs .faqs-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 4rem 0;
+}
+
+.faqs .accordion {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex-shrink: 0;
+  margin-right: 2rem;
+}
+
+.faqs .accordion-body {
+  background-color: var(--color-white);
+}
+
+.faqs .accordion-button {
+  background-color: var(--color-grey);
+}
+
+.faqs .faqs-title {
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 0 1rem 1rem;
+  font-size: 2.15rem;
+  font-weight: 600;
+  text-align: start;
+}
+
+.faqs .faqs-title::after {
+  content: "";
+  position: absolute;
+  height: 0.3rem;
+  width: 5rem;
+  left: 1.5rem;
+  bottom: 0.2rem;
+  transform: translateX(-2%);
+  background-color: var(--color-orange);
+}
+
+.faqs .accordion-item {
+  border-bottom: 1px solid var(--color-white);
+}
+
+.faqs .image-container {
+  width: 45%;
+}
+
+.faqs .faqs-img {
+  background: url("../../images/other-images/faq.jpg") center no-repeat;
+  padding: 1rem;
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.faqs .image-content {
+  color: white;
+  text-shadow: 5px 1px 8px rgba(0, 0, 0, 1);
+  width: 80%;
+}
+
+.faqs .accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: var(--color-orange);
+  color: var(--color-black);
+}
+.faqs .accordion-button:not(.collapsed)::after {
+  filter: brightness(0%) invert(0%);
+}
+.faqs .accordion-button:focus {
+  box-shadow: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .faqs .faqs-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .faqs .accordion {
+    width: 100%;
+  }
+
+  .faqs .image-container {
+    width: 100%;
+  }
+
+  .faqs .image-content {
+    margin-left: 3rem;
+  }
+
+  .faqs .faqs-img {
+    height: 23rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faqs .faqs-content {
+    padding: 2rem 0;
+  }
+
+  .faqs .accordion {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .faqs .image-content {
+    margin-left: 0;
+  }
+}

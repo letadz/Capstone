@@ -1,0 +1,236 @@
+.menu-services {
+  background: transparent;
+  /* margin-top: 2rem; */
+}
+
+.menu-services .menu-services-container {
+ padding: 2rem 0;
+}
+
+.menu-services .services-link-home:hover .arrow-left {
+  transform: translateX(-2px);
+}
+
+.menu-services .arrow-left {
+  margin-right: 0.5rem;
+  color: var(--color-black);
+  transition: 0.3s ease;
+}
+
+.menu-services .services-text-left {
+  position: relative;
+  color: var(--color-black);
+}
+
+.menu-services .services-text-left::after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+  left: 50%;
+  bottom: -0.4rem;
+  height: 3px;
+  background: var(--color-orange);
+}
+
+.menu-services .services-text-left:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.menu-services .services-text-right {
+  color: var(--color-black);
+  opacity: 0.5;
+}
+
+/* .menu-services .menu-services-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu-services .menu-services-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  } 
+
+.menu-services a {
+    flex: 1 1 auto;
+    width: 12.5rem;
+    color: var(--color-black);
+    text-decoration: none;
+} */
+
+/* SERVICES */
+.menu-services .services-container {
+  margin: 4rem auto;
+  height: 50rem;
+}
+
+.menu-services .services-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu-services .services-img1 {
+  background: url("../../images/services/hail-damage-repair.jpg") no-repeat
+    center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.menu-services .services-img2 {
+  background: url("../../images/services/engine-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.menu-services .services-img3 {
+  background: url("../../images/services/collision-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.menu-services .services-img4 {
+  background: url("../../images/services/glass-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.menu-services .services-img5 {
+  background: url("../../images/services/dent-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.menu-services .services-img6 {
+  background: url("../../images/services/frame-straightening.jpg") no-repeat
+    center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.menu-services .services-img7 {
+  background: url("../../images/services/exterior.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.menu-services .services-img8 {
+  background: url("../../images/services/body-restoration.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.menu-services .services-img9 {
+  background: url("../../images/services/engine-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.menu-services .services-img10 {
+  background: url("../../images/services/exterior.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.menu-services .services-img11 {
+  background: url("../../images/services/glass-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.menu-services .services-img12 {
+  background: url("../../images/services/dent-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 11rem;
+}
+
+.menu-services .services-items {
+  position: relative;
+  width: calc(25% - 2rem);
+  height: 250px;
+  margin: 0.5rem 1rem;
+  background: #eee;
+  cursor: pointer;
+  transition: 0.5s all;
+  color: var(--color-black);
+}
+
+.menu-services .services-content {
+  padding: 0.8rem;
+  min-height: 5rem;
+}
+
+.menu-services .services-title {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* HOVER */
+.menu-services .services-items:hover {
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.5);
+}
+
+.menu-services .services-items:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 0.4rem;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-orange);
+}
+
+.menu-services .services-items:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 71%;
+  width: 100%;
+  background-color: var(--color-orange);
+  opacity: 0.1;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-services .menu-services-container {
+    padding: 2rem 1rem;
+  }
+
+  .menu-services .services-container {
+    height: 69rem;
+  }
+
+  .menu-services .services-items {
+    width: calc(33.33% - 2rem);
+    height: 26%;
+  }
+
+  .menu-services .services-items:hover::after {
+    height: 69%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .menu-services .services-container {
+    height: 204rem;
+  }
+
+  .menu-services .services-items {
+    width: calc(100% - 2rem);
+    height: 8%;
+  }
+}

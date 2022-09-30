@@ -1,0 +1,313 @@
+.muffler-exhaust {
+    padding-top: 1rem;
+    background: var(--color-grey);
+  }
+  
+  .muffler-exhaust .muffler-exhaust-content {
+    text-decoration: none;
+    margin: 1rem auto 3rem;
+  }
+  
+  .muffler-exhaust .muffler-exhaust-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .muffler-exhaust .muffler-exhaust-link-home:hover .arrow-left {
+    transform: translateX(-2px);
+  }
+  
+  .muffler-exhaust .arrow-left {
+    margin-right: 0.5rem;
+    color: var(--color-black);
+    transition: 0.3s ease;
+  }
+  
+  .muffler-exhaust .muffler-exhaust-text-left {
+    position: relative;
+    color: var(--color-black);
+  }
+  
+  .muffler-exhaust .muffler-exhaust-text-left::after {
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    width: 0;
+    left: 50%;
+    bottom: -0.4rem;
+    height: 3px;
+    background: var(--color-orange);
+  }
+  
+  .muffler-exhaust .muffler-exhaust-text-left:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+  .muffler-exhaust .muffler-exhaust-text-middle {
+    position: relative;
+    color: var(--color-black);
+  }
+  
+  .muffler-exhaust .muffler-exhaust-text-middle::after {
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    width: 0;
+    left: 50%;
+    bottom: -0.4rem;
+    height: 3px;
+    background: var(--color-orange);
+  }
+  
+  .muffler-exhaust .muffler-exhaust-text-middle:hover::after {
+    width: 90%;
+    left: 0.2rem;
+  }
+  
+  .muffler-exhaust .muffler-exhaust-text-right {
+    color: var(--color-black);
+    opacity: 0.5;
+  }
+  
+  .muffler-exhaust .muffler-exhaust-left {
+    margin-top: 3rem;
+    width: min(100%, 43rem);
+    color: var(--color-black);
+    line-height: 1.3;
+  }
+  
+  .muffler-exhaust .muffler-exhaust-right {
+    width: calc(45% - 2rem);
+  }
+  
+  .muffler-exhaust .muffler-exhaust-img {
+    background: url("../../../../images/services/muffler-exhaust.jpg") no-repeat
+      center;
+    height: 25rem;
+    margin-top: 3.3rem;
+  }
+  .muffler-exhaust .copyright-muffler-exhaust {
+    background: var(--color-black);
+  }
+  
+  .muffler-exhaust .copyright-content {
+    padding: 0.6rem;
+    color: var(--color-grey);
+    border-top: 1px solid var(--color-grey);
+  }
+  
+  .muffler-exhaust .copyright-content > span {
+    font-size: 0.8rem;
+  }
+  
+  .muffler-exhaust .btn-schedule {
+    margin-top: 3rem;
+  }
+  
+  /* CONTACTS */
+  .muffler-exhaust .muffler-exhaust-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-black);
+  }
+  
+  .muffler-exhaust .contact-title {
+    position: relative;
+    padding: 2rem;
+    font-size: 2.15rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    color: var(--color-white);
+    text-align: center;
+  }
+  
+  .muffler-exhaust .contact-title::after {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    height: 0.3rem;
+    max-width: 8.5rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-orange);
+  }
+  
+  .muffler-exhaust .muffler-exhaust-contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: no-wrap;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    gap: 5rem;
+  }
+  
+  .muffler-exhaust .muffler-exhaust-contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--color-grey);
+  }
+  
+  .muffler-exhaust .muffler-exhaust-contact-left {
+    width: 37.5rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .muffler-exhaust .tel,
+  .muffler-exhaust .email,
+  .muffler-exhaust .address {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .muffler-exhaust .tel-number {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .muffler-exhaust .logo {
+    width: 25rem;
+  }
+  
+  .muffler-exhaust .tel-logo,
+  .email-logo,
+  .address-logo {
+    font-size: 2rem;
+  }
+  
+  .muffler-exhaust .map {
+    width: 37.5rem;
+    height: 25rem;
+    border: none;
+  }
+  
+  @media screen and (max-width: 1080px) {
+    .muffler-exhaust .map {
+      width: 30rem;
+      height: 25rem;
+    }
+  
+    .muffler-exhaust .logo {
+      width: 20rem;
+    }
+  }
+  
+  @media screen and (max-width: 944px) {
+    .muffler-exhaust .muffler-exhaust-contact-content {
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 1rem auto;
+      padding: 1rem 0;
+      gap: 1rem;
+    }
+  
+    .muffler-exhaust .muffler-exhaust-contact-left {
+      height: 18.75rem;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .muffler-exhaust .muffler-exhaust-contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: flex-start;
+      margin: auto;
+      gap: 1rem;
+      color: var(--color-grey);
+    }
+  
+    .muffler-exhaust .map {
+      width: 30rem;
+      height: 20rem;
+      padding: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .muffler-exhaust .muffler-exhaust-description {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .muffler-exhaust .muffler-exhaust-left {
+      margin-top: 2rem;
+      order: 1;
+    }
+  
+    .muffler-exhaust .muffler-exhaust-right {
+      width: calc(100% - 1rem);
+    }
+  
+    .muffler-exhaust .muffler-exhaust-description {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .muffler-exhaust .muffler-exhaust-left {
+      order: 1;
+    }
+  
+    .muffler-exhaust .muffler-exhaust-right {
+      width: calc(100% - 1rem);
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .muffler-exhaust .muffler-exhaust-contact-title {
+      margin-bottom: 1rem;
+    }
+  
+    .muffler-exhaust .muffler-exhaust-contact-left {
+      height: 18.75rem;
+      width: 100%;
+      gap: 2rem;
+    }
+  
+    .muffler-exhaust .muffler-exhaust-contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: flex-start;
+      margin: 0 1rem 0;
+      gap: 1rem;
+      color: var(--color-grey);
+    }
+  
+    .muffler-exhaust .muffler-exhaust-contact-left {
+      margin: 1rem auto;
+      padding: 1rem;
+      gap: 3rem;
+    }
+  
+    .muffler-exhaust .map {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  

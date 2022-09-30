@@ -1,0 +1,313 @@
+.exterior-body {
+  padding-top: 1rem;
+  background: var(--color-grey);
+}
+
+.exterior-body .exterior-body-content {
+  text-decoration: none;
+  margin: 1rem auto 3rem;
+}
+
+.exterior-body .exterior-body-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.exterior-body .exterior-body-link-home:hover .arrow-left {
+  transform: translateX(-2px);
+}
+
+.exterior-body .arrow-left {
+  margin-right: 0.5rem;
+  color: var(--color-black);
+  transition: 0.3s ease;
+}
+
+.exterior-body .exterior-body-text-left {
+  position: relative;
+  color: var(--color-black);
+}
+
+.exterior-body .exterior-body-text-left::after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+  left: 50%;
+  bottom: -0.4rem;
+  height: 3px;
+  background: var(--color-orange);
+}
+
+.exterior-body .exterior-body-text-left:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.exterior-body .exterior-body-text-middle {
+  position: relative;
+  color: var(--color-black);
+}
+
+.exterior-body .exterior-body-text-middle::after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+  left: 50%;
+  bottom: -0.4rem;
+  height: 3px;
+  background: var(--color-orange);
+}
+
+.exterior-body .exterior-body-text-middle:hover::after {
+  width: 90%;
+  left: 0.2rem;
+}
+
+.exterior-body .exterior-body-text-right {
+  color: var(--color-black);
+  opacity: 0.5;
+}
+
+.exterior-body .exterior-body-left {
+  margin-top: 3rem;
+  width: min(100%, 43rem);
+  color: var(--color-black);
+  line-height: 1.3;
+}
+
+.exterior-body .exterior-body-right {
+  width: calc(45% - 2rem);
+}
+
+.exterior-body .exterior-body-img {
+  background: url("../../../../images/services/hail-damage-repair.jpg") no-repeat
+    center;
+  height: 25rem;
+  margin-top: 1.5rem;
+}
+
+.exterior-body .copyright-exterior-body {
+  background: var(--color-black);
+}
+
+.exterior-body .copyright-content {
+  padding: 0.6rem;
+  color: var(--color-grey);
+  border-top: 1px solid var(--color-grey);
+}
+
+.exterior-body .copyright-content > span {
+  font-size: 0.8rem;
+}
+
+.exterior-body .btn-schedule {
+  margin-top: 3rem;
+}
+
+/* CONTACTS */
+.exterior-body .exterior-body-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-black);
+}
+
+.exterior-body .contact-title {
+  position: relative;
+  padding: 2rem;
+  font-size: 2.15rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.exterior-body .contact-title::after {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  height: 0.3rem;
+  max-width: 8.5rem;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-orange);
+}
+
+.exterior-body .exterior-body-contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  gap: 5rem;
+}
+
+.exterior-body .exterior-body-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--color-grey);
+}
+
+.exterior-body .exterior-body-contact-left {
+  width: 37.5rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.exterior-body .tel,
+.exterior-body .email,
+.exterior-body .address {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.exterior-body .tel-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.exterior-body .logo {
+  width: 25rem;
+}
+
+.exterior-body .tel-logo,
+.email-logo,
+.address-logo {
+  font-size: 2rem;
+}
+
+.exterior-body .map {
+  width: 37.5rem;
+  height: 25rem;
+  border: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .exterior-body .map {
+    width: 30rem;
+    height: 25rem;
+  }
+
+  .exterior-body .logo {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  .exterior-body .exterior-body-contact-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .exterior-body .exterior-body-contact-left {
+    height: 18.75rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .exterior-body .exterior-body-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin: auto;
+    gap: 1rem;
+    color: var(--color-grey);
+  }
+
+  .exterior-body .map {
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .exterior-body .exterior-body-description {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .exterior-body .exterior-body-left {
+    margin-top: 2rem;
+    order: 1;
+  }
+
+  .exterior-body .exterior-body-right {
+    width: calc(100% - 1rem);
+  }
+
+  .exterior-body .exterior-body-description {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .exterior-body .exterior-body-left {
+    order: 1;
+  }
+
+  .exterior-body .exterior-body-right {
+    width: calc(100% - 1rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .exterior-body .exterior-body-contact-title {
+    margin-bottom: 1rem;
+  }
+
+  .exterior-body .exterior-body-contact-left {
+    height: 18.75rem;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .exterior-body .exterior-body-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin: 0 1rem 0;
+    gap: 1rem;
+    color: var(--color-grey);
+  }
+
+  .exterior-body .exterior-body-contact-left {
+    margin: 1rem auto;
+    padding: 1rem;
+    gap: 3rem;
+  }
+
+  .exterior-body .map {
+    width: 100%;
+    height: 100%;
+  }
+}

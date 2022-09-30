@@ -1,0 +1,48 @@
+.hero-section .hero-bg {
+  position: relative;
+    height: 92vh;
+    width: 100%;
+    background: url('../../images/hero-bg/hero.jpg') no-repeat center top;
+    background-size: cover;
+}
+
+.hero-section .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  color: var(--color-white);
+  height: 100%;
+}
+
+.hero-section .hero-title {
+    font-size: 5rem;
+    font-weight: 700;
+    width: 80%;
+    text-shadow: 5px 1px 8px rgba(0,0,0,0.9);
+}
+
+.hero-section .hero-description {
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 5px 1px 8px rgba(0,0,0,0.7);
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section .hero-title {
+      font-size: 4rem;
+    }
+    .hero-section .hero-description {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .hero-section .hero-title {
+      font-size: 3.5rem;
+    }
+    .hero-section .hero-description {
+      font-size: 1.3rem;
+    }
+  }

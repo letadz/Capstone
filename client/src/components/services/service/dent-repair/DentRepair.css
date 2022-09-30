@@ -1,0 +1,313 @@
+.dent-repair {
+  padding-top: 1rem;
+  background: var(--color-grey);
+}
+
+.dent-repair .dent-repair-content {
+  text-decoration: none;
+  margin: 1rem auto 3rem;
+}
+
+.dent-repair .dent-repair-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.dent-repair .dent-repair-link-home:hover .arrow-left {
+  transform: translateX(-2px);
+}
+
+.dent-repair .arrow-left {
+  margin-right: 0.5rem;
+  color: var(--color-black);
+  transition: 0.3s ease;
+}
+
+.dent-repair .dent-text-left {
+  position: relative;
+  color: var(--color-black);
+}
+
+.dent-repair .dent-text-left::after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+  left: 50%;
+  bottom: -0.4rem;
+  height: 3px;
+  background: var(--color-orange);
+}
+
+.dent-repair .dent-text-left:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.dent-repair .dent-text-middle {
+  position: relative;
+  color: var(--color-black);
+}
+
+.dent-repair .dent-text-middle::after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+  left: 50%;
+  bottom: -0.4rem;
+  height: 3px;
+  background: var(--color-orange);
+}
+
+.dent-repair .dent-text-middle:hover::after {
+  width: 90%;
+  left: 0.2rem;
+}
+
+.dent-repair .dent-text-right {
+  color: var(--color-black);
+  opacity: 0.5;
+}
+
+.dent-repair .dent-repair-left {
+  margin-top: 3rem;
+  width: min(100%, 43rem);
+  color: var(--color-black);
+  line-height: 1.3;
+}
+
+.dent-repair .dent-repair-right {
+  width: calc(45% - 2rem);
+}
+
+.dent-repair .dent-repair-img {
+  background: url("../../../../images/services/dent-repair.jpg") no-repeat
+    center;
+  height: 25rem;
+  margin-top: 3.3rem;
+}
+
+.dent-repair .copyright-dent {
+  background: var(--color-black);
+}
+
+.dent-repair .copyright-content {
+  padding: 0.6rem;
+  color: var(--color-grey);
+  border-top: 1px solid var(--color-grey);
+}
+
+.dent-repair .copyright-content > span {
+  font-size: 0.8rem;
+}
+
+.dent-repair .btn-schedule {
+  margin-top: 3rem;
+}
+
+/* CONTACTS */
+.dent-repair .dent-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-black);
+}
+
+.dent-repair .contact-title {
+  position: relative;
+  padding: 2rem;
+  font-size: 2.15rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.dent-repair .contact-title::after {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  height: 0.3rem;
+  max-width: 8.5rem;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-orange);
+}
+
+.dent-repair .dent-contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  gap: 5rem;
+}
+
+.dent-repair .dent-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--color-grey);
+}
+
+.dent-repair .dent-contact-left {
+  width: 37.5rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.dent-repair .tel,
+.dent-repair .email,
+.dent-repair .address {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.dent-repair .tel-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.dent-repair .logo {
+  width: 25rem;
+}
+
+.dent-repair .tel-logo,
+.email-logo,
+.address-logo {
+  font-size: 2rem;
+}
+
+.dent-repair .map {
+  width: 37.5rem;
+  height: 25rem;
+  border: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .dent-repair .map {
+    width: 30rem;
+    height: 25rem;
+  }
+
+  .dent-repair .logo {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  .dent-repair .dent-contact-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .dent-repair .dent-contact-left {
+    height: 18.75rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .dent-repair .dent-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin: auto;
+    gap: 1rem;
+    color: var(--color-grey);
+  }
+
+  .dent-repair .map {
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dent-repair .dent-repair-description {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .dent-repair .dent-repair-left {
+    margin-top: 2rem;
+    order: 1;
+  }
+
+  .dent-repair .dent-repair-right {
+    width: calc(100% - 1rem);
+  }
+
+  .dent-repair .dent-repair-description {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .dent-repair .dent-repair-left {
+    order: 1;
+  }
+
+  .dent-repair .dent-repair-right {
+    width: calc(100% - 1rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dent-repair .dent-contact-title {
+    margin-bottom: 1rem;
+  }
+
+  .dent-repair .dent-contact-left {
+    height: 18.75rem;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .dent-repair .dent-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin: 0 1rem 0;
+    gap: 1rem;
+    color: var(--color-grey);
+  }
+
+  .dent-repair .dent-contact-left {
+    margin: 1rem auto;
+    padding: 1rem;
+    gap: 3rem;
+  }
+
+  .dent-repair .map {
+    width: 100%;
+    height: 100%;
+  }
+}

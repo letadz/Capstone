@@ -1,0 +1,92 @@
+.footer {
+  background-color: var(--color-black);
+  padding-top: 4rem;
+}
+
+.footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1rem auto 3rem auto;
+  gap: 1.5rem;
+}
+
+.footer .company-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.footer .online-support {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.footer .social-apps {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.footer .company-title,
+.online-title,
+.social-title {
+  margin-bottom: 2rem;
+  color: var(--color-orange);
+  text-transform: uppercase;
+}
+
+.footer span {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footer .company-info > a,
+.online-support > a {
+  text-decoration: none;
+  color: var(--color-grey);
+}
+
+.footer .company-info > a:hover,
+.online-support > a:hover {
+  color: var(--color-orange);
+}
+
+.footer .social-logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer .social-logo a {
+  text-decoration: none;
+  color: var(--color-grey);
+}
+
+.footer .fb-logo,
+.ig-logo,
+.twitter-logo,
+.linkedin-logo {
+  font-size: 1.375rem;
+}
+
+.footer .fb-logo:hover, .ig-logo:hover, .twitter-logo:hover, .linkedin-logo:hover {
+  color: var(--color-orange);
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer h5 {
+    font-size: 1.125rem;
+  }
+
+  .footer span {
+    font-size: 0.9rem;
+  }
+}

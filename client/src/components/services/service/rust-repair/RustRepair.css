@@ -1,0 +1,309 @@
+.rust-repair {
+    padding-top: 1rem;
+    background: var(--color-grey);
+  }
+  
+  .rust-repair .rust-repair-content {
+    text-decoration: none;
+    margin: 1rem auto 3rem;
+  }
+  
+  .rust-repair .rust-repair-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .rust-repair .rust-repair-link-home:hover .arrow-left {
+    transform: translateX(-2px);
+  }
+  
+  .rust-repair .arrow-left {
+    margin-right: 0.5rem;
+    color: var(--color-black);
+    transition: 0.3s ease;
+  }
+  
+  .rust-repair .rust-text-left {
+    position: relative;
+    color: var(--color-black);
+  }
+  
+  .rust-repair .rust-text-left::after {
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    width: 0;
+    left: 50%;
+    bottom: -0.4rem;
+    height: 3px;
+    background: var(--color-orange);
+  }
+  
+  .rust-repair .rust-text-left:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+  .rust-repair .rust-text-middle {
+    position: relative;
+    color: var(--color-black);
+  }
+  
+  .rust-repair .rust-text-middle::after {
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    width: 0;
+    left: 50%;
+    bottom: -0.4rem;
+    height: 3px;
+    background: var(--color-orange);
+  }
+  
+  .rust-repair .rust-text-middle:hover::after {
+    width: 90%;
+    left: 0.2rem;
+  }
+  
+  .rust-repair .rust-text-right {
+    color: var(--color-black);
+    opacity: 0.5;
+  }
+  
+  .rust-repair .rust-repair-left {
+    margin-top: 3rem;
+    width: min(100%, 43rem);
+    color: var(--color-black);
+    line-height: 1.3;
+  }
+  
+  .rust-repair .rust-repair-right {
+    width: calc(45% - 2rem);
+  }
+  
+  .rust-repair .rust-repair-img {
+    background: url("../../../../images/services/engine-repair.jpg") no-repeat
+      center;
+    height: 27rem;
+  }
+  
+  .rust-repair .copyright-rust {
+    background: var(--color-black);
+  }
+  
+  .rust-repair .copyright-content {
+    padding: 0.6rem;
+    color: var(--color-grey);
+    border-top: 1px solid var(--color-grey);
+  }
+  
+  .rust-repair .copyright-content > span {
+    font-size: 0.8rem;
+  }
+  
+  /* CONTACTS */
+  .rust-repair .rust-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-black);
+  }
+  
+  .rust-repair .contact-title {
+    position: relative;
+    padding: 2rem;
+    font-size: 2.15rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    color: var(--color-white);
+    text-align: center;
+  }
+  
+  .rust-repair .contact-title::after {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    height: 0.3rem;
+    max-width: 8.5rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-orange);
+  }
+  
+  .rust-repair .rust-contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: no-wrap;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    gap: 5rem;
+  }
+  
+  .rust-repair .rust-contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--color-grey);
+  }
+  
+  .rust-repair .rust-contact-left {
+    width: 37.5rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .rust-repair .tel,
+  .rust-repair .email,
+  .rust-repair .address {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .rust-repair .tel-number {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rust-repair .logo {
+    width: 25rem;
+  }
+  
+  .rust-repair .tel-logo,
+  .email-logo,
+  .address-logo {
+    font-size: 2rem;
+  }
+  
+  .rust-repair .map {
+    width: 37.5rem;
+    height: 25rem;
+    border: none;
+  }
+  
+  @media screen and (max-width: 1080px) {
+    .rust-repair .map {
+      width: 30rem;
+      height: 25rem;
+    }
+  
+    .rust-repair .logo {
+      width: 20rem;
+    }
+  }
+  
+  @media screen and (max-width: 944px) {
+    .rust-repair .rust-contact-content {
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 1rem auto;
+      padding: 1rem 0;
+      gap: 1rem;
+    }
+  
+    .rust-repair .rust-contact-left {
+      height: 18.75rem;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .rust-repair .rust-contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: flex-start;
+      margin: auto;
+      gap: 1rem;
+      color: var(--color-grey);
+    }
+  
+    .rust-repair .map {
+      width: 30rem;
+      height: 20rem;
+      padding: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .rust-repair .rust-repair-description {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .rust-repair .rust-repair-left {
+      margin-top: 2rem;
+      order: 1;
+    }
+  
+    .rust-repair .rust-repair-right {
+      width: calc(100% - 1rem);
+    }
+  
+    .rust-repair .rust-repair-description {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .rust-repair .rust-repair-left {
+      order: 1;
+    }
+  
+    .rust-repair .rust-repair-right {
+      width: calc(100% - 1rem);
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .rust-repair .rust-contact-title {
+      margin-bottom: 1rem;
+    }
+  
+    .rust-repair .rust-contact-left {
+      height: 18.75rem;
+      width: 100%;
+      gap: 2rem;
+    }
+  
+    .rust-repair .rust-contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: flex-start;
+      margin: 0 1rem 0;
+      gap: 1rem;
+      color: var(--color-grey);
+    }
+  
+    .rust-repair .rust-contact-left {
+      margin: 1rem auto;
+      padding: 1rem;
+      gap: 3rem;
+    }
+  
+    .rust-repair .map {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  

@@ -1,0 +1,144 @@
+/* SPECIAL OFFERS */
+.offers .offers-special {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.offers .offers-offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.offers .offers-title {
+  position: relative;
+  padding: 2rem;
+  font-size: 2.15rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.offers .offers-title::after {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  height: 0.3rem;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-orange);
+}
+
+.offers .item {
+  width: calc(29% - 2rem);
+  margin: 0.5rem 1rem;
+  position: relative;
+  background: #eee;
+  transition: 0.5s all;
+}
+
+.offers .item:hover {
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.5);
+}
+
+.offers .item:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 0.6rem;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-orange);
+}
+
+.offers .item:hover::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 61%;
+  width: 100%;
+  background-color: var(--color-orange);
+  opacity: 0.1;
+}
+
+.offers .item1-img {
+  background: url("../../images/services/hail-damage-repair.jpg") no-repeat
+    center;
+  background-size: cover;
+  height: 16rem;
+}
+
+.offers .item2-img {
+  background: url("../../images/services/engine-repair.jpg") no-repeat center;
+  background-size: cover;
+  height: 16rem;
+}
+
+.offers .item3-img {
+  background: url("../../images/services/exterior.jpg") no-repeat center;
+  background-size: cover;
+  height: 16rem;
+}
+
+.offers .item1-img::before,
+.item2-img::before,
+.item3-img::before {
+  content: "free";
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  margin: auto;
+  max-width: 6rem;
+  width: 100%;
+  background-color: var(--color-orange);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.offers .item-content {
+  padding: 1.5rem;
+}
+
+.offers .item-title {
+  font-size: 1.225rem;
+  font-weight: 600;
+}
+
+.offers .item-description {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+/* SPECIAL OFFERS */
+
+@media screen and (max-width: 768px) {
+  .offers .item {
+    width: calc(80% - 2rem);
+  }
+
+  .offers .item:hover::after{
+    height: 63.5%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .offers .item:hover::after{
+    height: 59%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .offers .item:hover::after{
+    height: 57%;
+  }
+}

@@ -1,0 +1,313 @@
+.collision-repair {
+  padding-top: 1rem;
+  background: var(--color-grey);
+}
+
+.collision-repair .collision-repair-content {
+  text-decoration: none;
+  margin: 1rem auto 3rem;
+}
+
+.collision-repair .collision-repair-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.collision-repair .collision-repair-link-home:hover .arrow-left {
+  transform: translateX(-2px);
+}
+
+.collision-repair .arrow-left {
+  margin-right: 0.5rem;
+  color: var(--color-black);
+  transition: 0.3s ease;
+}
+
+.collision-repair .collision-text-left {
+  position: relative;
+  color: var(--color-black);
+}
+
+.collision-repair .collision-text-left::after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+  left: 50%;
+  bottom: -0.4rem;
+  height: 3px;
+  background: var(--color-orange);
+}
+
+.collision-repair .collision-text-left:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.collision-repair .collision-text-middle {
+  position: relative;
+  color: var(--color-black);
+}
+
+.collision-repair .collision-text-middle::after {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  width: 0;
+  left: 50%;
+  bottom: -0.4rem;
+  height: 3px;
+  background: var(--color-orange);
+}
+
+.collision-repair .collision-text-middle:hover::after {
+  width: 90%;
+  left: 0.2rem;
+}
+
+.collision-repair .collision-text-right {
+  color: var(--color-black);
+  opacity: 0.5;
+}
+
+.collision-repair .collision-repair-left {
+  margin-top: 3rem;
+  width: min(100%, 43rem);
+  color: var(--color-black);
+  line-height: 1.3;
+}
+
+.collision-repair .collision-repair-right {
+  width: calc(45% - 2rem);
+}
+
+.collision-repair .collision-repair-img {
+  background: url("../../../../images/services/collision-repair.jpg") no-repeat
+    center;
+  height: 25rem;
+  margin-top: 3.3rem;
+}
+
+.collision-repair .copyright-collision {
+  background: var(--color-black);
+}
+
+.collision-repair .copyright-content {
+  padding: 0.6rem;
+  color: var(--color-grey);
+  border-top: 1px solid var(--color-grey);
+}
+
+.collision-repair .copyright-content > span {
+  font-size: 0.8rem;
+}
+
+.collision-repair .btn-schedule {
+  margin-top: 3rem;
+}
+
+/* CONTACTS */
+.collision-repair .collision-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-black);
+}
+
+.collision-repair .contact-title {
+  position: relative;
+  padding: 2rem;
+  font-size: 2.15rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.collision-repair .contact-title::after {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  height: 0.3rem;
+  max-width: 8.5rem;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-orange);
+}
+
+.collision-repair .collision-contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  gap: 5rem;
+}
+
+.collision-repair .collision-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--color-grey);
+}
+
+.collision-repair .collision-contact-left {
+  width: 37.5rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.collision-repair .tel,
+.collision-repair .email,
+.collision-repair .address {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.collision-repair .tel-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.collision-repair .logo {
+  width: 25rem;
+}
+
+.collision-repair .tel-logo,
+.email-logo,
+.address-logo {
+  font-size: 2rem;
+}
+
+.collision-repair .map {
+  width: 37.5rem;
+  height: 25rem;
+  border: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .collision-repair .map {
+    width: 30rem;
+    height: 25rem;
+  }
+
+  .collision-repair .logo {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  .collision-repair .collision-contact-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .collision-repair .collision-contact-left {
+    height: 18.75rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .collision-repair .collision-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin: auto;
+    gap: 1rem;
+    color: var(--color-grey);
+  }
+
+  .collision-repair .map {
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .collision-repair .collision-repair-description {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .collision-repair .collision-repair-left {
+    order: 1;
+  }
+
+  .collision-repair .collision-repair-right {
+    width: calc(100% - 1rem);
+  }
+
+  .collision-repair .collision-repair-description {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .collision-repair .collision-repair-left {
+    margin-top: 2rem;
+    order: 1;
+  }
+
+  .collision-repair .collision-repair-right {
+    width: calc(100% - 1rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .collision-repair .collision-contact-title {
+    margin-bottom: 1rem;
+  }
+
+  .collision-repair .collision-contact-left {
+    height: 18.75rem;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .collision-repair .collision-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin: 0 1rem 0;
+    gap: 1rem;
+    color: var(--color-grey);
+  }
+
+  .collision-repair .collision-contact-left {
+    margin: 1rem auto;
+    padding: 1rem;
+    gap: 3rem;
+  }
+
+  .collision-repair .map {
+    width: 100%;
+    height: 100%;
+  }
+}
