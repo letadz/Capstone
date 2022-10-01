@@ -11,7 +11,7 @@ export const createBooking = async (
 ) => {
   try {
     const { data } = await axios.post(
-      `${process.env.REACT_APP_BACKEND_URL}/createBook`,
+      "/createBook",
       {
         date_book,
         preferred_time,

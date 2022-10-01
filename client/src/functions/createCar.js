@@ -9,7 +9,7 @@ export const createCar = async (
 ) => {
   try {
     const { data } = await axios.post(
-      `${process.env.REACT_APP_BACKEND_URL}/addCar`,
+      "/addCar",
       {
         car_brand,
         car_model,
