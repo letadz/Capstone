@@ -71,9 +71,6 @@ const ProfileHome = ({ profile }) => {
 
   return (
     <div className="profile_container-user">
-      <div className="profile_verification">
-        {user.verified === false && <SendVerification user={user} />}
-      </div>
       <div className="profile_infos">
         <div className="profile_image details_1">
           <div className="profile_img">
